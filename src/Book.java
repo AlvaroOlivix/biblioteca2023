@@ -6,6 +6,8 @@ public class Book {
     private String author;
     private String dateOfPublication;
     private ArrayList<Author> authors;
+    private ArrayList<Genre> genres;
+    private Reserved reserved;
 
     public String getIsbn() {
         return isbn;
@@ -43,7 +45,24 @@ public class Book {
         return authors;
     }
 
+    public ArrayList<Genre> getGenres() {
+        return genres;
+    }
+
+    public void setGenres(ArrayList<Genre> genres) {
+        this.genres = genres;
+    }
+
     public void setAuthors(ArrayList<Author> authors) {
         this.authors = authors;
+
+    }
+
+    public Reserved getReserved() {
+        return reserved;
+    }
+
+    public void setReserved(Reserved reserved) {
+        this.reserved = reserved;
     }
 }
